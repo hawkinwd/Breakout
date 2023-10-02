@@ -1,0 +1,59 @@
+
+PUT YOUR NAME HERE: William Hawkins
+
+NOTE: If you are working by yourself (no teammates), then use this file
+(self_reflection_1.txt).  If you are working with teammates, then the order
+of the names in your team repository determines who uses which of the three
+self_reflection_X.txt files, as per this example:
+   For team     csse120-202110-andersm3-morrisnc-sheerimm
+     -- anderssm3 must use   self_reflection_1.txt
+     -- morrisnc  must use   self_reflection_2.txt
+     -- sheerimm  must use   self_reflection_3.txt
+Another example:
+   For team     csse120-202101-kintnecm-rams-harristj
+     -- kintnecm  must use   self_reflection_1.txt
+     -- rams      must use   self_reflection_2.txt
+     -- harristj  must use   self_reflection_3.txt
+
+Then answer the following questions.
+Answers can be BRIEF, but we expect them to be THOUGHTFUL answers.
+
+1.  Explain, in a sentence or two, something that SURPRISED you
+    after you began working on your project.
+
+    I was surprised with how little effort it took to implement classes, but how difficult it was to utilize them
+    correctly. When we were working throughout the quarter, I always thought creating a class was a big task. But
+    now I realize that its not the creation itself that takes significant effort, but correctly using the class
+    and adding features as you go along.
+
+2.  Identify something that you would have done DIFFERENTLY in your project,
+    with hindsight.  Then explain, in a short paragraph, how you did that
+    something (in your actual project), how you would have done it differently,
+    why you would do it differently, and how you would encourage yourself
+    to do it (or its equivalent) differently in future projects.
+
+    I would have included many more functions, as I feel my main function was just too big to easily follow. When
+    I was trying to fix a certain problem, I had to read through some 200 lines of code within main to find where
+    the problem was. One specific example would be the starting and stopping of powerups. There were many different
+    things that needed to be changed when a powerup started and stopped, such as the state of the powerup itself
+    (ie slow_ball = True), the start time of the powerup, and the string for the powerup. When done for all four
+    powerups, this created around 60 lines of code, just for one event. In the future, I would like to identify
+    when an element of main is going to be particularly long or messy and create one or multiple functions so that
+    main does not get too crowded.
+
+3.  Identify something that you are particularly PROUD of your work in your
+    project.  Explain, in a short paragraph, what it is, why you are proud
+    of it, and how you will encourage yourself to do it (or its equivalent)
+    similarly in future projects.
+
+    I am very proud of everything that went into the implementation of the powerups. From using the random library to
+    create a subset of special rectangles, to creating an image that would fall and collide with the paddle, to
+    starting and stopping the time, to displaying that timer on the screen. Particularly, the timer part of my code
+    was quite difficult and took some thinking. To record the time (time.time()) at which a powerup collided with a
+    powerup (using colliderect, something not covered in the introduction to pygame), was a workaround of not knowing
+    how to implement an actual timer that I thought was quite clever. And then to be able to create and update a
+    sequence of numbers that represented the active powerups. The difficult part of this was that if an active powerup
+    was caught, I wanted it to reset the timer to 5s. When this happened, more than one number representing the active
+    powerup existed in the list, and I realized I needed to remove all of that number when 5s was up. Then, I had to
+    be careful that I didn't update the variables again (ie I didn't want to add ANOTHER 65 to length of the paddle).
+    In the end, the powerups did exactly what I hoped they would, and I'm very proud of the way they turned out.

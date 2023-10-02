@@ -1,0 +1,40 @@
+In this file:
+
+1. Explain briefly what your project does and how it works.
+
+2. List the names of the classes in your project.
+
+3. If working with partner(s), indicate briefly how you divided up the work,
+   that is, who did what?
+
+4. List the modules (libraries) that you used (the things in IMPORT statements).
+
+5. Briefly list what things in the project are beyond what you learned
+   from the regular classwork in CSSE 120.  Include the major PyGame features
+   that you used in this list.
+
+ANSWERS:
+
+1. My project is a twist on the classic arcade game Breakout! A paddle at the bottom of the screen is controlled with
+   the left and right arrow keys. The object of the game is to clear all the bricks from the screen by bouncing the ball
+   off of them. If the ball hits the bottom the screen, a life is lost. 3 lives lost, and the game ends. My game also
+   includes 'special' bricks. These are blue, and when destroyed drop a powerup. If the powerup is caught with the
+   paddle, the special ability will be applied for 5 seconds. There are four different special abilities, randomly
+   generated at the start of each level: slow ball, long paddle, big ball, and wrap (the ball will no longer bounce off
+   the left and right side of the screen, but instead go 'through' to the other side).
+
+2. My project includes 7 classes, named as follows: Paddle, Ball, Brick, Wall, PowerUp, Scoreboard, LifeCounter.
+
+3. N/A
+
+4. pygame, sys, random, time, math
+
+5. Major PyGame features I used were: drawing shapes, responding to events, blitting, removing, and moving images, and
+   checking for a collision between two objects. One feature that took me a lot of effort beyond what we learned was the
+   timer for each powerup. I used the time library, and recorded the time at which the powerup was caught. I added 5
+   seconds to it, and once it was equal to the current time I unapplied the powerup. I also used the random library to
+   generate a random sequence, given a sequence using random.sample. I also used random.choice to randomly select a
+   starting direction. I used the continue command to wait for a click after the game ends; otherwise, my code continued
+   running and the game was still ongoing in the background. Another reason I used the time library was to pause the
+   game when the ball hit the bottom of the screen or a level was passed. Finally, I used a list comprehension command
+   to remove all of a certain number in a list using just one command ([i for i in powerup.active_powerups if i != 1]).
